@@ -34,6 +34,7 @@ export default () => (
     #landingButton {
         display: flex;
         align-content: center;
+        justify-content: center;
     }
     `}</style>
     </div>

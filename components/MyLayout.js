@@ -5,11 +5,16 @@ const layoutStyle = {
     padding: 20, 
     border: '1px solid #DDD'
 }
-
+const childrenStyle = {
+    display: 'flex',
+    justifyContent: 'center'
+}
 const Layout = (props) => (
     <div style={layoutStyle}>
         <Navbar />
-        {props.children}
+        <div style={childrenStyle}>
+            {props.children}
+        </div>
     </div>
 )
 
