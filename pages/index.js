@@ -1,21 +1,32 @@
 import Link from 'next/link'
+import Head from 'next/head'
+import { Image, Reveal } from 'semantic-ui-react'
 
 const landingPageStyle = {
     margin: 25,
     padding: 10,
-    border: '1px solid #DDD'
+    border: '1px solid #DDD',
+    alignContent: 'center'
 }
+
 export default () => (
-    <div>
     <div style={landingPageStyle}>
-        <h1>Justin Rhoads</h1>
-        <h2>Web Developer</h2>
-        <div id="landingButton">
-        <Link href="/home">
-            <button>Learn More</button>
-        </Link>
-        </div>
-    </div>
+        <Head>
+            <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css' />
+        </Head>
+                            <h1>Justin Rhoads</h1>
+                            <h2>Web Developer</h2>
+                    <Reveal animated='rotate' className="landingButton">
+                        <Reveal.Content visible>
+                            <Image circular size='small' src='../static/me.png' />
+                        </Reveal.Content>
+                        <Reveal.Content hidden >
+                                    <Image circular size='small' src='../static/friends.jpg' />
+                                    <Link href="/home">
+                                        <button>Learn More</button>
+                                    </Link>
+                        </Reveal.Content>
+                    </Reveal>
     <style jsx>{`
     h1, h2 {
         text-align: center;
@@ -31,10 +42,10 @@ export default () => (
     button {
         width: 100px;
     }
-    #landingButton {
+    .landingButton {
         display: flex;
         align-content: center;
-        justify-content: center;
+        justify-items: center;
     }
     `}</style>
     </div>

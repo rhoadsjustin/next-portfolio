@@ -3,7 +3,7 @@ import Layout from '../components/MyLayout.js'
 const aboutPhotoStyle = {
     minWidth: 100,
     maxWidth: 300,
-    width: 200,
+    width: '100%',
     height: 300,
     borderRadius: 5,
 }
@@ -19,14 +19,13 @@ export default () => (
                 <li>
                     <h4>Campus Watch - Web Developer</h4>
                     <p>Aug 2017 - Present</p>
-                    </li>
+                </li>
             </ul>
             <h2>Interests:</h2>
             <ul>
                 <li>Sports</li>
                 <li>Food</li>
                 <li>Fitness so I can have more freedom in the interest above</li>
-                
             </ul>
         
             </div>
