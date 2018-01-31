@@ -16,7 +16,8 @@ export default () => (
         </Head>
                             <h1>Justin Rhoads</h1>
                             <h2>Web Developer</h2>
-                    <Reveal animated='rotate' className="landingButton">
+            <div className="landingButton">
+                    <Reveal animated='rotate'>
                         <Reveal.Content visible>
                             <Image circular size='small' src='../static/me.png' />
                         </Reveal.Content>
@@ -27,6 +28,7 @@ export default () => (
                                     </Link>
                         </Reveal.Content>
                     </Reveal>
+            </div>
     <style jsx>{`
     h1, h2 {
         text-align: center;
