@@ -15,7 +15,7 @@ const Navbar = () => (
         </Head>
         <Menu pointing>
             <Menu.Item>
-                <Link href="/about">
+                <Link href="/home">
                     <a style={linkStyle}>About</a>
                 </Link>
             </Menu.Item>

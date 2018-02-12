@@ -1,5 +1,5 @@
 import Layout from '../components/MyLayout'
-import { Card, Icon, Image } from 'semantic-ui-react'
+import CardContent, { Card, Icon, Image, Message, Header } from 'semantic-ui-react'
 
 const picStyle = {
     width: 100,
@@ -39,6 +39,22 @@ export default () => (
                     <Icon name="linkedin" />
                         Connect
                 </a>
+                <a href="mailto:rhoadsjustin@gmail.com?subject=Let's Connect!" style={socialLinkStyle}>
+                    <Icon name='mail' />
+                        Email
+                </a>
+            </Card.Content>
+            <Card.Content>
+                <Header as="h3">Experience:</Header>
+            </Card.Content>
+            <Card.Content>
+                    <Header as="h4">Campus Watch</Header>
+                    <Card.Meta>
+                        8/2017 - Current
+                    </Card.Meta>
+                <Card.Description>
+                    Developed Business Site, Provider Portal, Optimized Database Structures, and Developed Dispatch Web App for location tracking and live chat to the user
+                </Card.Description>
             </Card.Content>
         </Card>
     </Layout>

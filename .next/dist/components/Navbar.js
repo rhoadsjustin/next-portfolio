@@ -51,7 +51,7 @@ var Navbar = function Navbar() {
             fileName: _jsxFileName,
             lineNumber: 17
         }
-    }, _react2.default.createElement(_link2.default, { href: '/about', __source: {
+    }, _react2.default.createElement(_link2.default, { href: '/home', __source: {
             fileName: _jsxFileName,
             lineNumber: 18
         }

@@ -1,5 +1,5 @@
 import Layout from '../components/MyLayout.js'
-import { Grid, Segment, Divider, Card} from 'semantic-ui-react'
+import { Grid, Segment, Divider, Card, Message} from 'semantic-ui-react'
 
 
 export default () => (
@@ -10,30 +10,54 @@ export default () => (
             <Grid columns={3} relaxed>
                 <Grid.Column>
                     <Segment basic>
-                            <h2>Problem Solving</h2>
+                        <Message 
+                            icon='puzzle'
+                            header="Problem Solving"
+                            content="Challenges inspire me, and finding solutions give me energy"
+                            />
                     </Segment>
                 </Grid.Column>
                 <Grid.Column>
                     <Segment basic>
-                        <h2>Javascript</h2>
-                        <h5>React, React Native, Angular, Vue</h5>
+                        <Message 
+                            icon='save'
+                            header='Javascript'
+                            content='React, React Native, Angular, Vue' />
                     </Segment>
                 </Grid.Column>
                 <Grid.Column>
                     <Segment basic>
-                        <h2>HTML/CSS</h2>
+                        <Message
+                            icon='browser'
+                            header='HTML/CSS'
+                            content='Responsive Web Design, Materialize, Bootstrap'
+                            />
                     </Segment>
                 </Grid.Column>
                 <Grid.Column>
                     <Segment basic>
-                        <h2>Node.js</h2>
-                        <h5>Express, Body Parser</h5>
+                        <Message 
+                            icon='server'
+                            header='Node.js'
+                            content='Express, Body Parser' />
                     </Segment>
                 </Grid.Column>
                 <Grid.Column>
                     <Segment basic>
-                        <h2>REST API's</h2>
-                        <h5>Firebase, MongoDB, CosmicJS</h5>
+                        <Message
+                            icon='connectdevelop'
+                            header="REST API's"
+                            content='Firebase, MongoDB, CosmicJS'
+                            />
+                    </Segment>
+                </Grid.Column>
+                <Grid.Column>
+                    <Segment basic>
+                        <Message
+                            icon='users'
+                            header="Leadership"
+                            content='Development, Collaboration, Communication, Coachability, Humility'
+                        />
                     </Segment>
                 </Grid.Column>
             </Grid>
