@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import { Image, Reveal } from 'semantic-ui-react'
+import Layout from '../components/MyLayout'
 
 const landingPageStyle = {
     margin: 25,
@@ -16,38 +17,44 @@ export default () => (
         </Head>
                             <h1>Justin Rhoads</h1>
                             <h2>Web Developer</h2>
-            <div className="landingButton">
-                    <Reveal animated='rotate'>
-                        <Reveal.Content visible>
-                            <Image circular size='small' src='../static/me.png' />
-                        </Reveal.Content>
-                        <Reveal.Content hidden >
-                                    <Image circular size='small' src='../static/friends.jpg' />
+                  <div className="logo">
+                        <img src="../static/profilepic.jpg" />
+                  </div>
+                                <div className="landingButton">
                                     <Link href="/home">
                                         <button>Learn More</button>
                                     </Link>
-                        </Reveal.Content>
-                    </Reveal>
-            </div>
+                                </div>
     <style jsx>{`
     h1, h2 {
         text-align: center;
     }
     h1 {
-        font-size: 2em;
+        font-size: 4em;
         font-weight: 500;
     }
     h2 {
-        font-size: 16px;
+        font-size: 22px;
         font-weight: 200;
     }
     button {
         width: 100px;
     }
     .landingButton {
-        display: flex;
-        align-content: center;
-        justify-items: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .logo {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .logo img {
+        border-radius: 75px;
+        animation: App-logo-spin infinite 20s linear;
+    }
+    @keyframes App-logo-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
     }
     `}</style>
     </div>

@@ -29,15 +29,15 @@ export default () => (
             <Card.Content extra>
                 <a href="https://www.twitter.com/_justinrhoads" style={socialLinkStyle}>
                     <Icon name="twitter" />
-                        Follow Me
+                        Follow
                 </a>
                 <a href="https://www.github.com/rhoadsjustin" style={socialLinkStyle}>
                     <Icon name="github" />
-                        Check My Code
+                        Code
                 </a>
                 <a href="https://www.linkedin.com/in/rhoadsjustin" style={socialLinkStyle}>
                     <Icon name="linkedin" />
-                        Let's Connect
+                        Connect
                 </a>
             </Card.Content>
         </Card>
