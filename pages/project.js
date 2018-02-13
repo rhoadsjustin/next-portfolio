@@ -1,4 +1,5 @@
 import Layout from '../components/MyLayout'
+import Head from 'next/head'
 import { Card, Icon, Image, Button } from 'semantic-ui-react'
 
 const projectStyle = {
@@ -16,6 +17,9 @@ const logoPicStyle = {
 }
 const Project = (props) => (
     <div style={projectStyle}>
+        <Head>
+            <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css' />
+        </Head>
         <Card>
             <Image src={props.logo} />
             <Card.Content>
