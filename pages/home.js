@@ -12,9 +12,6 @@ const socialLinkStyle = {
 }
 export default () => (
     <Layout>
-        <Head>
-            <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css' />
-        </Head>
         <Card style={{ width: '75%'}}>
             <Image src="../static/JustinRhoads.jpg"  style={picStyle}/>
             <Card.Content>
